@@ -38,6 +38,7 @@ chmod +x script2.sh
 chmod +x script3.sh
 chmod +x script4.sh
 chmod +x script5.sh.
+```
 
 **Step 4: Execute the Scripts**
 Run the scripts by prefixing the filename with ./ (which tells Linux to look in the current directory).
@@ -45,13 +46,15 @@ Run the scripts by prefixing the filename with ./ (which tells Linux to look in 
 To run Script 1, 2, 3, or 5:
 ```bash
 ./script1.sh
-
+```
 Special Instruction for Script 4 (script4.sh):
 Script 4 is a Log File Analyzer that requires a target file to read. You must pass a file path as an argument when you run it.
 
 To test it, first create a dummy log file:
 ```bash
 echo -e "System booted\nWarning: high memory\nError: connection timeout\nError: Apache failed" > testlog.txt
+```
 Then, run the script and point it at that file:
 ```bash
 ./script4.sh testlog.txt
+```
