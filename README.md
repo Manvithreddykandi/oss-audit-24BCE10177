@@ -54,7 +54,7 @@ To test it, first create a dummy log file:
 ```bash
 echo -e "System booted\nWarning: high memory\nError: connection timeout\nError: Apache failed" > testlog.txt
 ```
-Then, run the script and point it at that file:
+Then, run the script against the test file:
 ```bash
 ./script4.sh testlog.txt
 ```
